@@ -7,9 +7,13 @@ public class Cinema {
     // Sæder, der ikke er reserveret, har værdien "O"
     public Cinema(int rows, int seats) {
         this.seats = new String[rows][seats];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < seats; j++) {
+                this.seats[i][j] = "0";
+            }
+        }
         this.seats[0][0] = "X";
     }
-
     public int getRows() {
         return seats.length;
     }
@@ -22,7 +26,7 @@ public class Cinema {
     // In that case, change the value to X and return true.
     // If the seat is already reserved, return false.
     public boolean reserve(int row, int seat) {
-        if (seats[row][seat].equals("O")) {
+        if (row >= 0 && row < getRows() && seat >= 0 && seat < getSeats() && seats[row][seat].equals("0")) {
             seats[row][seat] = "X";
             return true;
         }
@@ -36,9 +40,9 @@ public class Cinema {
         }
         return false;
     }
-
+@Override
     public String toString() {
-        String result = null;
+        String result = "";
         for (int i = 0; i < seats.length; i++) {
             result += "|";
             for (int j = 0; j < seats[i].length; j++) {

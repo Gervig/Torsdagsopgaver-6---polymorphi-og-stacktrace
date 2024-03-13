@@ -1,4 +1,4 @@
-package codeflow;
+import codeflow.Cinema;
 
 public class FindFemFejl {
 
