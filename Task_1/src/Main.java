@@ -4,7 +4,6 @@ public class Main {
         Flow flow1 = new Flow();
         myMainMethod(flow1);
     }
-
     public static void myMainMethod(Flow myMethods) {
         myMethods.methodA();
         myMethods.methodB();
@@ -12,5 +11,3 @@ public class Main {
         myMethods.methodD();
     }
 }
-
-

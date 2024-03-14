@@ -1,12 +1,12 @@
 import codeflow.Cinema;
 
 public class FindFemFejl {
-
     public static void main(String[] args) {
         Cinema biogrande = new Cinema(20, 10);
 
         // Reserver række 1, sæde 5
         System.out.println("Række 1, sæde 5 er reserveret: " + biogrande.reserve(1, 5));
+        System.out.println("Række 2, sæde 2 er reserveret: " + biogrande.reserve(2, 2));
 
         // Print hele salen pænt
         System.out.println(biogrande);
