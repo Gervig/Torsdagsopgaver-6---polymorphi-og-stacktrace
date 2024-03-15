@@ -10,7 +10,6 @@ public class Student extends Person {
         super(name);
         this.passedCourse = passedCourse;
     }
-
     @Override   //  3.4
     public boolean addCourse(String course) {
         if (passedCourse.contains(course)) {

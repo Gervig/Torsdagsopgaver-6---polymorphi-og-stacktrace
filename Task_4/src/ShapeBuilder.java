@@ -1,21 +1,19 @@
 import java.util.ArrayList;
 
 //  4.3
-public class BootyBuilder {
+public class ShapeBuilder {
     ArrayList<Shape> shapesList = new ArrayList<>();
 
-    public BootyBuilder() {
+    public ShapeBuilder() {
 
     }
-
     public void addShape(Shape s) {
         shapesList.add(s);
     }
-
     public double getTotalArea() {
         double sum = 0.0;
-        for (Shape bBooty : shapesList) {
-                sum += bBooty.getArea();
+        for (Shape s : shapesList) {
+                sum += s.getArea();
         }
         return sum;
 

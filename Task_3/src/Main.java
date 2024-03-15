@@ -6,15 +6,15 @@ public class Main {
 
         ArrayList<String> s1passed = new ArrayList<>();
         s1passed.add("Biology");
+        s1passed.add("How to win at boardgames");
         Student s1 = new Student("Casper", s1passed);
         personList.add(s1);
-
 
         ArrayList<String> s2passed = new ArrayList<>();
         s2passed.add("Java 1.0");
         Student s2 = new Student("Rikke", s2passed);
         personList.add(s2);
-        s2.addCourse("Social cues");
+        s2.addCourse("Social Cues");
 
         ArrayList<String> t1canTeach = new ArrayList<>();
         t1canTeach.add("Biology");

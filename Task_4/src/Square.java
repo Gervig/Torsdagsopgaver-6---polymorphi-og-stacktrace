@@ -7,7 +7,7 @@ public class Square implements Shape{
     }
     @Override
     public double getArea() {
-//        double sum = Math.pow(side, 2);
+//        double sum = Math.pow(side, 2);   // samme som side^2 (hvis altså java kunne finde ud af det)
         double sum = side * side;
         return sum;
     }

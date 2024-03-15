@@ -8,12 +8,12 @@ class Flow {
         System.out.print('a');
     }
     public void methodB() {
-        System.out.print(" ");
+        System.out.print('\u0020'); // char unicode for space
     }
     public void methodC() {
         System.out.print('e');
         System.out.print('r');
-        System.out.print(" ");
+        System.out.print('\u0020');
     }
     public void methodD() {
         System.out.print('s');
